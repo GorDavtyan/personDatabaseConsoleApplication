@@ -101,8 +101,8 @@ public class UserInterface {
      * @param age     the age
      */
     public void validAge(Scanner scanner, int age) {
-        while (age <= 0) {
-            System.out.println("Invalid statement, please enter the positive number");
+        while (age <= 0 || age >= 100) {
+            System.out.println("Invalid statement, please enter the valid age");
             age = scanner.nextInt();
         }
     }
